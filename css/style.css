@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+#block-1 {
+    padding: 28px 0;
+}
+
+#block-1 .nav-item ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#block-1 .nav-item ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#block-1 .nav-item ul li p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .075em;
+}
+
+#block-1 .nav-item li span {
+    font-size: 16px;
+}
+
+#block-1 .nav-item ul li i {
+    font-size: 24px;
+    line-height: 1;
+    color: #01b3a7;
+    margin-right: 10px;
+}
+
+#block-1 .nav-item li .btn-1 {
+    padding: 12px 23px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-color: #01b3a7;
+    background: transparent;
+    transition: 0.3s ease-out;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+#block-1 .nav-item li .btn-1::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 20%;
+    opacity: 0;
+    content: '';
+    background-color: #50ba87;
+    color: #fff !important;
+    border-color: #50ba87;
+    
+}
+
+/* #block-1 .nav-item li .btn-1::after {
+    color: #fff;
+} */
+
+#block-1 .nav-item li .btn-1:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
